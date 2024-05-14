@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Delete files smaller than 12k
+mkdir stills
+ffmpeg -i ./DJI_0288.MP4 -vsync 0 -f image2 stills/my-film-%06d.png;
